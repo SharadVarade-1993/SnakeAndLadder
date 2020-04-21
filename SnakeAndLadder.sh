@@ -34,7 +34,7 @@ function checkOption(){
 					;;
 		$Snake)
 					PlayerPosition=$(( $PlayerPosition - $result ))
-					if [ $PlayerPosition -lt 0]
+					if [ $PlayerPosition -lt 0 ];
 					then
 							PlayerPosition=0
 					fi
@@ -52,7 +52,7 @@ function getPreviousPosition(){
 
 function playerTwo(){
 	PlayerPosition=$playerTwoPosition
-	rillingDie
+	rollingDie
 	checkOption
 	playerTwoPosition=$PlayerPosition
 	turn=0
